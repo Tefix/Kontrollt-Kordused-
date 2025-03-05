@@ -47,6 +47,31 @@
 #         print(f"У вас осталось {8 - i} попыток")
 
 #4
+# num = input("Введите число: ")
+# reversed_num = ""
+#
+# for reverse in num:
+#     reversed_num = reverse + reversed_num
+#
+# print("Обратное число:", reversed_num)
+#5
+while True:
+    try:
+        n=abs(int(input("Введите число: ")))
+        break
+    except ValueError:
+        print("See pole täisarv. Proovige uuesti.")
+
+
+summa = 0
+tööd = 1
+while n > 0:
+    k = n % 10
+    summa = summa + k
+    n = n // 10
+    tööd = tööd * k
+print("Arvu summa on", summa)
+print("Arvu korrutis on", tööd)
 
 
 
